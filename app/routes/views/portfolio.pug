@@ -1,0 +1,177 @@
+extends /layout.pug
+block content
+    .container.header-panel
+      .header-panel-content
+        img.header-panel-img.profile-img.rounded-circle(src='assets/img/home/profile-img.jpg', alt='profile-img')
+        .name-page
+          h4 Portfolio
+      .header-title-name
+        h5 Richard Roe
+    // MOBILE NAVIGATION
+    .float-btn.top
+      a.main-btn
+        .mobile-icon
+          i.icon.ion-md-add
+      ul
+        li
+          a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+            i.icon.ion-md-home
+        li
+          a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+            i.icon.ion-md-person
+        li
+          a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+            i.icon.ion-md-school
+        li
+          a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+            i.icon.ion-md-images
+        li
+          a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+            i.icon.ion-md-paper-plane
+    // NAVIGATION
+    nav.nav-wide
+      a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+        i.icon.ion-md-home
+      a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+        i.icon.ion-md-person
+      a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+        i.icon.ion-md-school
+      a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+        i.icon.ion-md-images
+      a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+        i.icon.ion-md-paper-plane
+    .header
+      #scene.parallax-viewport
+        .img-bg.img1(data-parallaxify-range-x='30', data-parallaxify-range-y='50')
+        .img-bg.img2(data-parallaxify-range-x='75', data-parallaxify-range-y='50')
+        .img-bg.img3(data-parallaxify-range-x='150', data-parallaxify-range-y='50')
+    #pjax-container
+      #page-section.p_scroll
+        .container
+          .container.page-bg
+            .row
+              .col-md-12
+                .description-text
+                  p
+                    | Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus. Nunc maximus scelerisque volutpat. Integer auctor velit eget eros pellentesque, nec tristique urna pulvinar. Nulla volutpat elit eu sodales lacinia.Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus.
+            // ./row
+            // PORTFOLIO
+            .portfolio-section
+              // menu-portfolio
+              ul#filter
+                li
+                  a.active-filter(href='#', data-group='all') All
+                li
+                  a(href='#', data-group='ui') UI / UX Design
+                li
+                  a(href='#', data-group='photography') Photography
+                li
+                  a(href='#', data-group='graphic-design') Graphic Design
+                li
+                  a(href='#', data-group='web-design') Web Design
+              // /#filter
+              // Grid portfolio
+              #grid.row.portfolio-gutters.no-gutters
+                // item
+                .col-sm-6.col-lg-4.item(data-groups='["ui"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/1.jpg')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/1.jpg', alt='img')
+                      .info
+                        h3 Colorful Mosaic
+                        p Pattern
+                        .button-hover-img
+                          span view project
+                // /.item
+                .col-sm-6.col-lg-4.item(data-groups='["photography"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/2.jpg', title='Project Title')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/2.jpg', alt='img')
+                      .info
+                        h3 Polygonal Design
+                        p Geometric Shapes
+                        .button-hover-img
+                          span view project
+                // /.item
+                .col-sm-6.col-lg-4.item(data-groups='["ui"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/3.jpg', title='Project Title')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/3.jpg', alt='img')
+                      .info
+                        h3 Colorful Bubble
+                        p Shapes Composition
+                        .button-hover-img
+                          span view project
+                // /.item
+                .col-sm-6.col-lg-4.item(data-groups='["graphic-design"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/4.jpg', title='Project Title')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/4.jpg', alt='img')
+                      .info
+                        h3 Ribbon Banner
+                        p Sticker, badge, poster
+                        .button-hover-img
+                          span view project
+                // /.item
+                .col-sm-6.col-lg-4.item(data-groups='["photography"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/5.jpg', title='Project Title')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/5.jpg', alt='img')
+                      .info
+                        h3 Abstract
+                        p Background
+                        .button-hover-img
+                          span view project
+                // /.item
+                .col-sm-6.col-lg-4.item(data-groups='["web-design"]')
+                  .ih-item.square.effect11.bottom_to_top
+                    a.image-link(href='assets/img/portfolio/big-img/6.jpg', title='Project Title')
+                      .img
+                        img.img-fluid(src='assets/img/portfolio/6.jpg', alt='img')
+                      .info
+                        h3 Music Concept
+                        p Poster
+                        .button-hover-img
+                          span view project
+                // /.item
+                // /#grid
+                // /.container
+                // /.resume-section
+                // /.container page-bg
+                // /.container
+                // /#page-section
+                // /#pjax-container
+                // FOOTER
+                footer
+                  .container-fluid
+                    .wrap-footer-content
+                      span © Sonax Studio 2018 All Rights Reserved.
+                      .social-link-footer
+                        a(href='#')
+                          i.icon.ion-logo-twitter
+                        a(href='#')
+                          i.icon.ion-logo-facebook
+                        a(href='#')
+                          i.icon.ion-logo-dribbble
+                        a(href='#')
+                          i.icon.ion-logo-instagram
+                // JS
+                script(src='assets/js/jquery-3.2.1.min.js')
+                script(src='assets/js/imagesloaded.pkgd.min.js')
+                script(src='assets/js/nprogress.js')
+                script(src='assets/js/circle-progress.min.js')
+                script(src='assets/js/perfect-scrollbar.min.js')
+                script(src='assets/js/bootstrap.bundle.min.js')
+                script(src='assets/js/jquery.parallaxify.min.js')
+                script(src='assets/js/owl.carousel.min.js')
+                script(src='assets/js/jquery.shuffle.min.js')
+                script(src='assets/js/jquery.magnific-popup.min.js')
+                script(src='assets/js/validator.min.js')
+                script(src='assets/js/form-scripts.js')
+                script(src='assets/js/pjax.min.js')
+                script(src='assets/js/main.js')
