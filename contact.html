@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sonax</title>
+    <title>About</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Mobile Specific Metas -->
@@ -20,12 +20,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/perfect-scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
+
 <body>
     <div class="container header-panel">
         <div class="header-panel-content">
-            <img class="header-panel-img profile-img rounded-circle animated zoomin" src="assets/img/home/profile-img.jpg" alt="profile-img">
-            <div class="name-page">
-                <h4>Home</h4></div>
+            <img class="header-panel-img profile-img rounded-circle" src="assets/img/home/profile-img.jpg" alt="profile-img">
+            <div class="name-page"><h4>Contacts</h4></div>
         </div>
         <div class="header-title-name">
             <h5>Richard Roe</h5>
@@ -46,7 +46,6 @@
             <li><a href="contact.html" class="content-link icon-wrap" data-toggle="popover" data-content="contacts"><i class = "icon ion-md-paper-plane"></i></a></li>
         </ul>
     </div>
-    <!-- NAVIGATION  -->
     <nav class="nav-wide">
         <a href="index.html" class="content-link icon-wrap" data-toggle="popover" data-content="home"><i class = "icon ion-md-home"></i></a>
         <a href="about.html" class="content-link icon-wrap" data-toggle="popover" data-content="about"><i class = "icon ion-md-person"></i></a>
@@ -54,7 +53,6 @@
         <a href="portfolio.html" class="content-link icon-wrap" data-toggle="popover" data-content="portfolio"><i class = "icon ion-md-images"></i></a>
         <a href="contact.html" class="content-link icon-wrap" data-toggle="popover" data-content="contacts"><i class = "icon ion-md-paper-plane"></i></a>
     </nav>
-    <!-- /.nav-wide -->
     <div class="header">
         <div id="scene" class="parallax-viewport">
             <div data-parallaxify-range-x="30" data-parallaxify-range-y="50" class="img-bg img1"></div>
@@ -62,28 +60,79 @@
             <div data-parallaxify-range-x="150" data-parallaxify-range-y="50" class="img-bg img3"></div>
         </div>
     </div>
-    <!-- /.header -->
     <div id="pjax-container">
-        <div class="header-content p_scroll">
+        <div id="page-section" class="p_scroll">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3 offset-md-1">
-                        <img class="profile-img rounded-circle img-fluid" src="assets/img/home/profile-img.jpg" alt="profile-img">
+                <div class="container page-bg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="description-text">
+                                <p>Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus. Nunc maximus scelerisque volutpat. Integer auctor velit eget eros pellentesque, nec tristique urna pulvinar. Nulla volutpat elit eu sodales lacinia.Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-7 home-header-text">
-                        <h1>Richard Roe</h1>
-                        <h4>I'm Web Developer & Desinger</h4>
-                        <p>Sed lectus est, sollicitudin at consectetur non, fringilla at dolor. In hac habitasse platea dictumst.Proin et euismod ipsum. Cras elementum, augue in euismod convallis, quam mi posuere ligula, vitae semper quam lacus ac ante.</p>
-                        <a class="button content-link" href="portfolio.html">View portfolio</a>
+                    <!-- ./row -->
+                    <div class="form-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="title-text">Get In Touch</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 order-md-1 order-2">
+                                <form id="contactForm" data-toggle="validator" class="shake">
+                                    <div class="form-group">
+                                        <!-- ENTER MANE -->
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- ENTER EMAIL -->
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required data-error="Please enter your email address">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- ENTER MESSAGE -->
+                                        <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required data-error="Please enter your message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- button form submit -->
+                                    <div class="submit">
+                                        <div class="content-button">
+                                            <button id="form-submit" class="button-form">SUBMIT</button>
+                                        </div>
+                                        <div id="msgSubmit" class="h5 h5 text-danger hidden"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-4 order-md-2 order-1">
+                                <div class="contact-info">
+                                    <ul>
+                                        <li>
+                                            <p> <span> Address</span> - Street, City, Country</p>
+                                        </li>
+                                        <li>
+                                            <p> <span> Phone</span> - (123) 456 789</p>
+                                        </li>
+                                        <li>
+                                            <p> <span> E-mail</span> - your-email@mail.com </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.personal-info -->
+                            </div>
+                        </div>
+                        <!-- /.row -->
                     </div>
+                    <!-- /.form-content -->
                 </div>
-                <!-- /.row -->
+                <!-- /.container page-bg -->
             </div>
             <!-- /.container -->
         </div>
-        <!-- /.header-content -->
+        <!-- /#page-section -->
     </div>
-    <!-- /.pjax-container -->
+    <!-- /#pjax-container  -->
     <!-- FOOTER -->
     <footer>
         <div class="container-fluid">
