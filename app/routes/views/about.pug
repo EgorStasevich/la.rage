@@ -1,0 +1,176 @@
+extends /layout.pug
+block content
+    // HEADER PANEL
+    .container.header-panel
+      .header-panel-content
+        img.header-panel-img.profile-img.rounded-circle(src='assets/img/home/profile-img.jpg', alt='profile-img')
+        .name-page
+          h4 About My
+      .header-title-name
+        h5 Richard Roe
+    // MOBILE NAVIGATION
+    .float-btn.top
+      a.main-btn
+        .mobile-icon
+          i.icon.ion-md-add
+      ul
+        li
+          a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+            i.icon.ion-md-home
+        li
+          a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+            i.icon.ion-md-person
+        li
+          a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+            i.icon.ion-md-school
+        li
+          a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+            i.icon.ion-md-images
+        li
+          a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+            i.icon.ion-md-paper-plane
+    // NAVIGATION
+    nav.nav-wide
+      a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+        i.icon.ion-md-home
+      a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+        i.icon.ion-md-person
+      a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+        i.icon.ion-md-school
+      a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+        i.icon.ion-md-images
+      a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+        i.icon.ion-md-paper-plane
+    .header
+      #scene.parallax-viewport
+        .img-bg.img1(data-parallaxify-range-x='30', data-parallaxify-range-y='50')
+        .img-bg.img2(data-parallaxify-range-x='75', data-parallaxify-range-y='50')
+        .img-bg.img3(data-parallaxify-range-x='150', data-parallaxify-range-y='50')
+    #pjax-container
+      // ajax content section
+      #page-section.p_scroll
+        .container
+          .container.page-bg
+            .row
+              .col-md-12
+                .description-text
+                  p
+                    | Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus. Nunc maximus scelerisque volutpat. Integer auctor velit eget eros pellentesque, nec tristique urna pulvinar. Nulla volutpat elit eu sodales lacinia.Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus.
+            // ./row
+            // personal info
+            .personal-info
+              h4.title-text Personal Information
+              .row
+                ul.col-md-4.col-lg-3
+                  li
+                    p
+                      span  Name
+                      |  - Richard Roe
+                  li
+                    p
+                      span  Brithday
+                      |  - 12 Dec 1990
+                  li
+                    p
+                      span  Nationality
+                      |  - British
+                ul.col-md-5.col-lg-4
+                  li
+                    p
+                      span  Born 
+                      |  - London, UK
+                  li
+                    p
+                      span  Language
+                      |  - English, Germany
+              // ./row
+              // /.personal-info
+              // MY SkILL SECTION
+              .skill-section
+                h4.title-text Skills
+                .row
+                  .col-md-3.col-sm-6.text-center
+                    h6 Photography
+                    .wrap-skill-circle
+                      .circle(data-value='0.65')
+                  .col-md-3.col-sm-6.text-center
+                    h6 Wordpress
+                    .wrap-skill-circle
+                      .circle(data-value='0.5')
+                  .col-md-3.col-sm-6.text-center
+                    h6 Illustrator
+                    .wrap-skill-circle
+                      .circle(data-value='0.75')
+                  .col-md-3.col-sm-6.text-center
+                    h6 PHP
+                    .wrap-skill-circle
+                      .circle(data-value='0.8')
+                // /.row
+                // /.skill-section
+                // MY SERVICES
+                .services-section
+                  h4.title-text My Services
+                  .row
+                    .col-md-4
+                      .services-item.b1
+                        h5.text-center Web Design
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laborum nostrum autem perspiciatis deleniti, odio veniam modi debitis numquam dolorum repudiandae repellat nulla provident labore nesciunt esse magni.
+                    .col-md-4
+                      .services-item.b2
+                        h5.text-center Graphic Design
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laborum nostrum autem perspiciatis deleniti, odio veniam modi debitis numquam dolorum repudiandae repellat nulla provident labore nesciunt esse magni.
+                    .col-md-4
+                      .services-item.b3
+                        h5.text-center Branding
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laborum nostrum autem perspiciatis deleniti, odio veniam modi debitis numquam dolorum repudiandae repellat nulla provident labore nesciunt esse magni.
+                // /.services-section
+                // clients section
+                .clients
+                  h4.title-text Clients
+                  // carousel-section
+                  .owl-carousel.clients-slide
+                    div
+                      img(src='assets/img/clients/company.png', alt='')
+                    div
+                      img(src='assets/img/clients/company-2.png', alt='')
+                    div
+                      img(src='assets/img/clients/company-3.png', alt='')
+                    div
+                      img(src='assets/img/clients/company-4.png', alt='')
+                // /.clients
+                // /.container page-bg
+                // /.container
+                // /#page-section
+                // /#pjax-container
+                // FOOTER
+                footer
+                  .container-fluid
+                    .wrap-footer-content
+                      span © Sonax Studio 2018 All Rights Reserved.
+                      .social-link-footer
+                        a(href='#')
+                          i.icon.ion-logo-twitter
+                        a(href='#')
+                          i.icon.ion-logo-facebook
+                        a(href='#')
+                          i.icon.ion-logo-dribbble
+                        a(href='#')
+                          i.icon.ion-logo-instagram
+                // JS
+                script(src='assets/js/jquery-3.2.1.min.js')
+                script(src='assets/js/imagesloaded.pkgd.min.js')
+                script(src='assets/js/nprogress.js')
+                script(src='assets/js/circle-progress.min.js')
+                script(src='assets/js/perfect-scrollbar.min.js')
+                script(src='assets/js/bootstrap.bundle.min.js')
+                script(src='assets/js/jquery.parallaxify.min.js')
+                script(src='assets/js/owl.carousel.min.js')
+                script(src='assets/js/jquery.shuffle.min.js')
+                script(src='assets/js/jquery.magnific-popup.min.js')
+                script(src='assets/js/validator.min.js')
+                script(src='assets/js/form-scripts.js')
+                script(src='assets/js/pjax.min.js')
+                script(src='assets/js/main.js')

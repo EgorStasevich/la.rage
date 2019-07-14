@@ -1,0 +1,44 @@
+{
+  "name": "Diplom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "confirm": "^0.1.1",
+    "confirm-simple": "^1.0.3",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.3.3",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "git": "^0.1.5",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.9",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "prompt-confirm": "^2.0.4",
+    "pug": "^2.0.3",
+    "save": "^2.4.0",
+    "shopify-cartjs": "^0.4.1",
+    "window": "^4.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th0rd/diplom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Th0rd/diplom/issues"
+  },
+  "homepage": "https://github.com/Th0rd/diplom#readme"
+}

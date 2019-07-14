@@ -1,0 +1,93 @@
+extends /layout.pug
+block content
+    .container.header-panel
+      .header-panel-content
+        img.header-panel-img.profile-img.rounded-circle(src='assets/img/home/profile-img.jpg', alt='profile-img')
+        .name-page
+          h4 Resume
+      .header-title-name
+        h5 Richard Roe
+    // MOBILE NAVIGATION
+    .float-btn.top
+      a.main-btn
+        .mobile-icon
+          i.icon.ion-md-add
+      ul
+        li
+          a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+            i.icon.ion-md-home
+        li
+          a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+            i.icon.ion-md-person
+        li
+          a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+            i.icon.ion-md-school
+        li
+          a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+            i.icon.ion-md-images
+        li
+          a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+            i.icon.ion-md-paper-plane
+    // NAVIGATION
+    nav.nav-wide
+      a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+        i.icon.ion-md-home
+      a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+        i.icon.ion-md-person
+      a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+        i.icon.ion-md-school
+      a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+        i.icon.ion-md-images
+      a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+        i.icon.ion-md-paper-plane
+    .header
+      #scene.parallax-viewport
+        .img-bg.img1(data-parallaxify-range-x='30', data-parallaxify-range-y='50')
+        .img-bg.img2(data-parallaxify-range-x='75', data-parallaxify-range-y='50')
+        .img-bg.img3(data-parallaxify-range-x='150', data-parallaxify-range-y='50')
+    #pjax-container
+      #page-section.p_scroll
+        .container
+          .container.page-bg
+            .row
+              h4.title-text Заказы
+              table(class ='table' style = 'color: black; text-align: center;')
+                thead
+                    tr
+                        th хуй
+                        th пизда
+                        th скаварада
+                tbody
+                    tr(style = 'font-weight: normal;')
+                        td ебать
+                        td аппап
+                        td ааа
+            // FOOTER
+            footer
+              .container-fluid
+                .wrap-footer-content
+                  span © Sonax Studio 2018 All Rights Reserved.
+                  .social-link-footer
+                    a(href='#')
+                      i.icon.ion-logo-twitter
+                    a(href='#')
+                      i.icon.ion-logo-facebook
+                    a(href='#')
+                      i.icon.ion-logo-dribbble
+                    a(href='#')
+                      i.icon.ion-logo-instagram
+            // JS
+            script(src='assets/js/jquery-3.2.1.min.js')
+            script(src='assets/js/imagesloaded.pkgd.min.js')
+            script(src='assets/js/nprogress.js')
+            script(src='assets/js/circle-progress.min.js')
+            script(src='assets/js/perfect-scrollbar.min.js')
+            script(src='assets/js/bootstrap.bundle.min.js')
+            script(src='assets/js/jquery.parallaxify.min.js')
+            script(src='assets/js/owl.carousel.min.js')
+            script(src='assets/js/jquery.shuffle.min.js')
+            script(src='assets/js/jquery.magnific-popup.min.js')
+            script(src='assets/js/validator.min.js')
+            script(src='assets/js/form-scripts.js')
+            script(src='assets/js/pjax.min.js')
+            script(src='assets/js/main.js')

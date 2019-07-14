@@ -1,0 +1,132 @@
+extends /layout.pug
+block content
+    .container.header-panel
+      .header-panel-content
+        img.header-panel-img.profile-img.rounded-circle(src='assets/img/home/profile-img.jpg', alt='profile-img')
+        .name-page
+          h4 Contacts
+      .header-title-name
+        h5 Richard Roe
+    // MOBILE NAVIGATION
+    .float-btn.top
+      a.main-btn
+        .mobile-icon
+          i.icon.ion-md-add
+      ul
+        li
+          a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+            i.icon.ion-md-home
+        li
+          a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+            i.icon.ion-md-person
+        li
+          a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+            i.icon.ion-md-school
+        li
+          a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+            i.icon.ion-md-images
+        li
+          a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+            i.icon.ion-md-paper-plane
+    // NAVIGATION
+    nav.nav-wide
+      a.content-link.icon-wrap(href='/', data-toggle='popover', data-content='home')
+        i.icon.ion-md-home
+      a.content-link.icon-wrap(href='/about', data-toggle='popover', data-content='about')
+        i.icon.ion-md-person
+      a.content-link.icon-wrap(href='/resume', data-toggle='popover', data-content='resume')
+        i.icon.ion-md-school
+      a.content-link.icon-wrap(href='/portfolio', data-toggle='popover', data-content='portfolio')
+        i.icon.ion-md-images
+      a.content-link.icon-wrap(href='/contact', data-toggle='popover', data-content='contacts')
+        i.icon.ion-md-paper-plane
+    .header
+      #scene.parallax-viewport
+        .img-bg.img1(data-parallaxify-range-x='30', data-parallaxify-range-y='50')
+        .img-bg.img2(data-parallaxify-range-x='75', data-parallaxify-range-y='50')
+        .img-bg.img3(data-parallaxify-range-x='150', data-parallaxify-range-y='50')
+    #pjax-container
+      #page-section.p_scroll
+        .container
+          .container.page-bg
+            .row
+              .col-md-12
+                .description-text
+                  p
+                    | Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus. Nunc maximus scelerisque volutpat. Integer auctor velit eget eros pellentesque, nec tristique urna pulvinar. Nulla volutpat elit eu sodales lacinia.Nam odio quam, cursus sed scelerisque vel, tincidunt non ligula. Praesent luctus nunc ut magna pharetra, eget lacinia justo tempus.
+            // ./row
+            .form-content
+              .row
+                .col-md-12
+                  h4.title-text Get In Touch
+              .row
+                .col-md-8.order-md-1.order-2
+                  form#contactForm.shake(data-toggle='validator')
+                    .form-group
+                      // ENTER MANE
+                      input#name.form-control(type='text', placeholder='Enter name', required='', data-error='Please enter your name')
+                      .help-block.with-errors
+                    .form-group
+                      // ENTER EMAIL
+                      input#email.form-control(type='email', placeholder='Enter email', required='', data-error='Please enter your email address')
+                      .help-block.with-errors
+                    .form-group
+                      // ENTER MESSAGE
+                      textarea#message.form-control(rows='5', placeholder='Enter your message', required='', data-error='Please enter your message')
+                      .help-block.with-errors
+                    // button form submit
+                    .submit
+                      .content-button
+                        button#form-submit.button-form SUBMIT
+                      #msgSubmit.h5.h5.text-danger.hidden
+                .col-md-4.order-md-2.order-1
+                  .contact-info
+                    ul
+                      li
+                        p
+                          span  Address
+                          |  - Street, City, Country
+                      li
+                        p
+                          span  Phone
+                          |  - (123) 456 789
+                      li
+                        p
+                          span  E-mail
+                          |  - your-email@mail.com
+                  // /.personal-info
+                  // /.row
+                  // /.form-content
+                  // /.container page-bg
+                  // /.container
+                  // /#page-section
+                  // /#pjax-container
+                  // FOOTER
+                  footer
+                    .container-fluid
+                      .wrap-footer-content
+                        span © Sonax Studio 2018 All Rights Reserved.
+                        .social-link-footer
+                          a(href='#')
+                            i.icon.ion-logo-twitter
+                          a(href='#')
+                            i.icon.ion-logo-facebook
+                          a(href='#')
+                            i.icon.ion-logo-dribbble
+                          a(href='#')
+                            i.icon.ion-logo-instagram
+                  // JS
+                  script(src='assets/js/jquery-3.2.1.min.js')
+                  script(src='assets/js/imagesloaded.pkgd.min.js')
+                  script(src='assets/js/nprogress.js')
+                  script(src='assets/js/circle-progress.min.js')
+                  script(src='assets/js/perfect-scrollbar.min.js')
+                  script(src='assets/js/bootstrap.bundle.min.js')
+                  script(src='assets/js/jquery.parallaxify.min.js')
+                  script(src='assets/js/owl.carousel.min.js')
+                  script(src='assets/js/jquery.shuffle.min.js')
+                  script(src='assets/js/jquery.magnific-popup.min.js')
+                  script(src='assets/js/validator.min.js')
+                  script(src='assets/js/form-scripts.js')
+                  script(src='assets/js/pjax.min.js')
+                  script(src='assets/js/main.js')
