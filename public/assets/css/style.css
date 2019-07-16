@@ -268,7 +268,7 @@ h6 {
   padding: 30px 30px 72px 30px;
   background-color: #fcfcfc;
   border-radius: 5px;
-  height: 100%;
+  height: auto;
   margin-bottom: 152px;
 }
 /*--- 2.HOME-HEADER ---*/
@@ -541,6 +541,7 @@ a.icon-wrap {
 }
 /*---- 5.FOOTER ----*/
 footer {
+  left: 0px;
   position: fixed;
   z-index: 999;
   bottom: 0;
@@ -813,7 +814,6 @@ footer span {
 }
 .ih-item.square {
   width: 100%;
-  height: 100%;
   border: none;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.12);
