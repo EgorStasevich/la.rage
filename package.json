@@ -13,7 +13,7 @@
     "express-session": "^1.16.1",
     "git": "^0.1.5",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.2.4",
     "mongoose": "^5.5.9",
     "morgan": "^1.9.1",
